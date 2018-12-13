@@ -13,7 +13,7 @@ class Todos extends Component {
   }
   componentDidMount() {
     axios.get('/todo').then((response) => {
-      console.log(response)
+      // console.log(response)
       this.setState({
         todos: response.data
       })

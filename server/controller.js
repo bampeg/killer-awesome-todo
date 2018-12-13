@@ -6,7 +6,7 @@ module.exports = {
     let dbInstance = req.app.get('db')
     dbInstance.get_todos()
       .then((todos) => {
-        console.log(todos)
+        // console.log(todos)
         res.status(200).send(todos)
       })
   },
@@ -16,7 +16,7 @@ module.exports = {
 
     dbInstance.add_todo(todo, urgency)
       .then((todos) => {
-        console.log(todos)
+        // console.log(todos)
         res.status(200).send(todos)
       })
   }
